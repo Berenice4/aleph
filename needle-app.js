@@ -53,7 +53,7 @@ if (!customElements.get(componentName)) {
             while(this.basePath.endsWith('/')) {
                 this.basePath = this.basePath.slice(0, -1);
             }
-            script.src = this.getAttribute('script-src') || `${this.basePath}/assets/index-43a7c226.js`;
+            script.src = this.getAttribute('script-src') || `${this.basePath}/assets/index-a915f052.js`;
             this.shadowRoot.appendChild(script);
 
             this.needleEngine = document.createElement('needle-engine');
@@ -79,7 +79,7 @@ if (!customElements.get(componentName)) {
         updateAttributes() {
             console.debug("NeedleApp updating attributes");
             
-            const src = this.getAttribute('src') || `${this.basePath}/assets/VRdemo.glb`;
+            const src = this.getAttribute('src') || `${this.basePath}/assets/hotspots.glb`;
             if(src) this.needleEngine.setAttribute("src", src);
             else this.needleEngine.removeAttribute("src");
 
