@@ -53,7 +53,7 @@ if (!customElements.get(componentName)) {
             while(this.basePath.endsWith('/')) {
                 this.basePath = this.basePath.slice(0, -1);
             }
-            script.src = this.getAttribute('script-src') || `${this.basePath}/assets/index-81bb7bb4.js`;
+            script.src = this.getAttribute('script-src') || `${this.basePath}/assets/index-6e267191.js`;
             this.shadowRoot.appendChild(script);
 
             this.needleEngine = document.createElement('needle-engine');
